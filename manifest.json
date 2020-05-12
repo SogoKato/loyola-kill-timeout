@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "LOYOLAタイムアウト回避",
+  "description": "1分おきにLOYOLAの画面上部の時計をクリックします。",
+  "version": "0.1",
+  "icons": {
+    "16": "icons/16.png",
+    "48": "icons/48.png",
+    "128": "icons/128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://scs.cl.sophia.ac.jp/*"],
+      "js": ["main.js"],
+      "css": ["main.css"],
+      "run_at": "document_end"
+    }
+  ]
+}

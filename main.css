@@ -1,0 +1,6 @@
+#area-h1::after {
+  content: "タイムアウト回避中";
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
